@@ -4,6 +4,7 @@
 
 #include "Log.h"
 #include <memory>
+#include <vector>
 
 namespace Hist
 {
@@ -46,7 +47,8 @@ namespace Hist
 
   private:
     std::unique_ptr<Logger> m_log;
-
+  protected:
+    std::vector<EInteger> m_data;
   };
 
 }

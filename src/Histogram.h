@@ -7,6 +7,8 @@ namespace Hist
 {
     struct Histogram : public HistogramBase
     {
+        using HistogramBase::HistogramBase;
+
         void add(EInteger) override;
 
         // Return the value that occurrs most often in the data set (I.e. there exists no other value that occurs more often than the return value)
@@ -17,9 +19,6 @@ namespace Hist
 
         // Return the largest value in the data set
         EInteger getMaxValue() const override;
-
-    private:
-        Logger* m_logger = nullptr;
     };
 }
 
