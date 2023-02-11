@@ -19,6 +19,9 @@ namespace Hist
     int m_rng_state = 0;
   };
 
+  // n: the number random ints to be created
+  // gen: reference to the generator
+  // returns vector of randomly generated EIntegers
   std::vector<EInteger> createRandomEintegers(int n, RandomEintegerGenerator& gen);
 
 }
