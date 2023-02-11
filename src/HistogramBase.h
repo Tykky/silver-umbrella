@@ -35,7 +35,6 @@ namespace Hist
 
     virtual void add(EInteger) = 0;
 
-
     // Return the value that occurrs most often in the data set (I.e. there exists no other value that occurs more often than the return value)
     virtual EInteger getMode() const = 0;
 

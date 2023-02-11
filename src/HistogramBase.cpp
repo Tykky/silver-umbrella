@@ -2,6 +2,10 @@
 
 namespace Hist
 {
+    HistogramBase::~HistogramBase()
+    {
+    }
+
     HistogramBase::HistogramBase(std::unique_ptr<Logger> log)
     {
     }
@@ -13,5 +17,4 @@ namespace Hist
     HistogramBase::HistogramBase(HistogramBase&& base)
     {
     }
-
 }

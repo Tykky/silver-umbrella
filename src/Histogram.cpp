@@ -5,6 +5,7 @@ namespace Hist
 {
     void Histogram::add(EInteger eint)
     {
+        return;
     }
 
     EInteger Histogram::getMode() const 
@@ -21,5 +22,4 @@ namespace Hist
     {
         return {};
     }
-
 }
